@@ -37,7 +37,7 @@ function styles() {
 	return gulp.src('./src/styles/main.less')
 	   .pipe(gulpif(isDev, sourcemaps.init()))
 	   .pipe(less())
-	   //.pipe(concat('style.css'))
+	   .pipe(concat('style.css'))
 	   .pipe(gcmq())
 	   .pipe(autoprefixer({
 	        browsers: ['last 2 versions'],
