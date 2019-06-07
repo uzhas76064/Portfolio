@@ -5,8 +5,13 @@
 @web-dev-image: "../img/web_developer.jpg";
 @text-color: black;
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 header {
     width: 100%;
+    color: white;
 
     .header-container {
         text-transform: uppercase;
@@ -18,6 +23,8 @@ header {
         justify-content: space-between;
 
         h2 {
+            font-weight: 800;
+            font-size: 26px;
             padding: 17px 49px 22px 49px;
         }
 
@@ -30,6 +37,8 @@ header {
 
 nav {
     padding: 17px 49px 22px 49px;
+    font-size: 15px;
+    font-weight: 800;
 
    li {
     display: inline-block;
@@ -37,6 +46,11 @@ nav {
 
     :last-child {
         padding-right: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
     }
    }
 }
@@ -50,8 +64,22 @@ nav {
         padding-top: 205px;
         color: white;
 
+        h3 {
+            font-size: 30px;
+            padding-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 68px;
+            letter-spacing: 22px;
+            text-transform: uppercase;
+        }
+
         h4 {
             padding-bottom: 45px;
+            font-size: 18px;
+            font-weight: 600;
+            padding-top: 10px;
         }
     }
 
@@ -62,14 +90,20 @@ nav {
         img {
             width: 50px;
             transform: rotate(90deg);
-            /*padding-bottom: 45px;*/
             padding-right: 50px;
+            cursor: pointer;
         }
 
         button {
             text-transform: uppercase;
             display: block;
             padding: 13px 16px;
+            font-weight: 800;
+            background: #CFC91D;
+            color: @text-color;
+            border: none;
+            width: 197px;
+            cursor: pointer;
         }
     }
 }
