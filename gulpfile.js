@@ -40,7 +40,7 @@ function styles() {
 	   .pipe(concat('style.css'))
 	   .pipe(gcmq())
 	   .pipe(autoprefixer({
-	        browsers: ['last 2 versions'],
+	        browsers: ['last 3 versions'],
 	        cascade: false
 		}))
 	   //.pipe(postcss())

@@ -3,7 +3,7 @@
 @header-colors: #02918C;
 @markcolor: #CFC91D;
 @web-dev-image: "../img/web_developer.jpg";
-@text-color: black;
+@text-color: #7e8287;
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -57,7 +57,7 @@ nav {
 
 .web-developer {
     background: url(@web-dev-image) no-repeat;
-    background-size: 100%;
+    background-size: cover;
     text-align: center;
 
     .hgroup {
@@ -100,10 +100,33 @@ nav {
             padding: 13px 16px;
             font-weight: 800;
             background: #CFC91D;
-            color: @text-color;
+            color: black;
             border: none;
             width: 197px;
             cursor: pointer;
         }
+    }
+}
+
+.about-me-container {
+    text-align: -webkit-center;
+    margin-top: 95px;
+
+    h2 {
+        padding-bottom: 25px;
+        font-size: 46px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: @header-colors;
+    }
+
+    .decoration {
+        padding-bottom: 25px;
+    }
+
+    .description p {
+        line-height: 40px;
+        font-size: 16px;
+        color: @text-color;
     }
 }
