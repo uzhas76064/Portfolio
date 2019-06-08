@@ -9,6 +9,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+strong {
+    font-weight: bolder;
+    font-size: 23px;
+}
+
 header {
     width: 100%;
     color: white;
@@ -108,9 +113,13 @@ nav {
     }
 }
 
+.about-me {
+    margin-top: 95px;
+    margin-bottom: 100px;
+}
+
 .about-me-container {
     text-align: -webkit-center;
-    margin-top: 95px;
 
     h2 {
         padding-bottom: 25px;
@@ -128,5 +137,36 @@ nav {
         line-height: 40px;
         font-size: 16px;
         color: @text-color;
+        margin-bottom: 75px;
+    }
+}
+
+.about-me-functions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .item {
+        text-align: center;
+        padding-right: 65px;
+        padding-left: 65px;
+        border-right: 1px solid #808080;
+
+        h3 {
+            padding-bottom: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 23px;
+        }
+
+        p {
+            font-size: 13px;
+            line-height: 21px;
+            color: @text-color;
+        }
+    }
+
+    :last-child {
+        border: none;
     }
 }
