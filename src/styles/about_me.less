@@ -1,0 +1,67 @@
+@import "props.less";
+
+.about-me {
+    max-width: 1187px;
+    margin: 100px auto;
+}
+
+.about-me-container {
+    text-align: -webkit-center;
+
+    h2 {
+        padding-bottom: 25px;
+        font-size: 46px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: @header-colors;
+    }
+
+    .decoration {
+        padding-bottom: 25px;
+    }
+
+    .description p {
+        line-height: 40px;
+        font-size: 16px;
+        color: @text-color;
+        margin-bottom: 75px;
+
+        strong {
+            .strong-custom();
+        }
+    }
+}
+
+.about-me-functions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .item {
+        text-align: center;
+        min-width: 290px;
+        border-right: 1px solid #808080;
+
+        h3 {
+            padding-bottom: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 23px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 21px;
+            color: @text-color;
+            padding-bottom: 40px;
+        }
+
+        img {
+            padding-bottom: 25px;
+        }
+    }
+
+    :last-child {
+        border: none;
+    }
+}
