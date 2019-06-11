@@ -5,8 +5,16 @@
     margin: 100px auto;
 }
 
-.about-me-container {
+.description {
     text-align: -webkit-center;
+    line-height: 40px;
+    font-size: 16px;
+    color: @text-color;
+    margin-bottom: 75px;
+
+    strong {
+        .strong-custom();
+    }
 
     h2 {
         padding-bottom: 25px;
@@ -18,17 +26,6 @@
 
     .decoration {
         padding-bottom: 25px;
-    }
-
-    .description p {
-        line-height: 40px;
-        font-size: 16px;
-        color: @text-color;
-        margin-bottom: 75px;
-
-        strong {
-            .strong-custom();
-        }
     }
 }
 
