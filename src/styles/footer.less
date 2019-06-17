@@ -1,6 +1,17 @@
+@import "props.less";
+
 footer {
     background: #0B0B0B;
     padding-top: 50px;
+
+    .footer-copy {
+        margin-top: 70px;
+        background: black;
+        color: @text-color;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: -webkit-center;
+    }
 }
 
 .wrapper {
@@ -21,12 +32,18 @@ input {
     line-height: @line-height;
     width: 638px;
     border: none;
+    color: @text-color;
     border-bottom:2px solid gray;
     background: #0B0B0B;
 
     &::-webkit-input-placeholder {
         text-align: center;
         text-transform: uppercase;
+    }
+
+    &:focus {
+       outline: 0;
+       outline-offset: 0;
     }
 
     &.message {
