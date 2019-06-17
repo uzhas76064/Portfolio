@@ -1,5 +1,25 @@
-
 @import "props.less";
 @import "reset.less";
 @import "header.less";
 @import "about_me.less";
+@import "my_work.less";
+@import "contact_me.less";
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 14px;
+    }
+
+    .web-developer .hgroup h1 {
+        letter-spacing: normal;
+    }
+
+    .about-me-functions .item {
+        border: none;
+    }
+
+    .col {
+        flex-basis:  100%;
+        /* margin: 20px; */
+    }
+}
