@@ -38,11 +38,6 @@ nav {
     :last-child {
         padding-right: 0;
     }
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
    }
 }
 
@@ -50,6 +45,10 @@ nav {
     background: url(@web-dev-image) no-repeat;
     background-size: cover;
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .hgroup {
         padding-top: 205px;
@@ -79,14 +78,8 @@ nav {
         text-align: -moz-center;
         padding-bottom: 210px;
 
-        img {
-            width: 50px;
-            transform: rotate(90deg);
-            padding-right: 50px;
-            cursor: pointer;
-        }
-
         button {
+            margin-top: 45px;
             .button-yellow();
         }
     }

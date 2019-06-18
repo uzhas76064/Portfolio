@@ -1,0 +1,32 @@
+@import "props.less";
+
+nav a {
+    &::before {
+        content: "";
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background: white;
+        transition: 0.2s;
+    }
+
+    &:hover {
+        color: white;
+    }
+
+    &:hover::before {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.know-more button, footer .send {
+    transition-property: background;
+    transition-duration: 0.2s;
+
+    &:hover {
+        background: darken(@markcolor, 13%);
+    }
+}
